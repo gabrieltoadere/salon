@@ -13,10 +13,11 @@ body{
 
 .header-buttons-container{
   position:absolute;
-  right: 20%;
+  right: 10%;
   display: flex;
-  width: 400px;
+  width: 600px;
   justify-content: space-around;
+  border: solid;
 }
 
 .header{
@@ -46,7 +47,8 @@ body{
   color:white;
   border: none;
   font-family: 'Fraunces';
-  font-size: 20px;
+  font-size: 25px;
+  transition: all ease 0.3s;
 }
 
 .background-image {
@@ -66,9 +68,28 @@ body{
 .content {
   position: relative;
   margin: 0;
-  margin-top: 80vh;
+  margin-top: 25vh;
   padding: 20px;
   background: rgba(255, 255, 255, 1);
+}
+
+.welcome {
+  position: relative;
+  margin: 0;
+  margin-top: 15vh;
+  padding: 20px;
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-text-container{
+  text-align: center;
+}
+
+.welcome-text{
+  color: white;
+  font-family: 'Fraunces';
 }
 
 .parallax-section {
@@ -98,3 +119,22 @@ body{
   color: white;
 }
 
+.insta-logo{
+  width: 40px;
+}
+
+.fb-logo{
+  width: 35px;
+}
+
+.socials{
+  background: none;
+  border: none;
+  transition: all ease 0.3s;
+}
+
+
+.socials:hover, .header-button:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
