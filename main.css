@@ -30,7 +30,7 @@ body{
   padding-bottom: 20px;
   border-bottom: solid;
   border-width: 3px;
-  border-color: rgba(172, 144, 91, 0.89);
+  border-color: rgba(203, 149, 49,89);
 }
 
 .icon{
@@ -65,9 +65,6 @@ body{
 }
 
 .content {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: auto;
   text-align: center;
   position: relative;
@@ -147,10 +144,11 @@ body{
 
 .service-grid {
   display: grid;
-  width: 60vw;
+  width: 80vw;
   margin: 0 auto;
-  grid-template-columns: repeat(2, 20vw);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3,25vw);
+  grid-gap: 2vw;
+  justify-content: center;
 }
 
 .split-heading {
@@ -180,9 +178,39 @@ body{
   clip-path: inset(50% 0 0 0); 
 }
 
-.grid-image-1{
-  max-height: 100%;
-  max-width: 100%;
-  background-image: url("pic11.jpg");
-  background-size: cover;
+.grid-item{
+  height: 60vh;
+  width: 25vw;
+  overflow: hidden;
 }
+
+.grid-item1{
+  width: 100%;
+  height: 100%;
+  background: url('pic11.jpg');
+  background-size: cover;
+  object-fit: cover;
+}
+
+.grid-item2{
+  width: 100%;
+  height: 100%;
+  background: url('pic13.jpg');
+  background-size: cover;
+  object-fit: cover;
+}
+
+.grid-item3{
+  width: 100%;
+  height: 100%;
+  background: url('pic12.jpg');
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+.middle-grid-item{
+  transform: translateY(-5%);
+}
+
+
