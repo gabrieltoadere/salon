@@ -94,7 +94,7 @@ body{
 
 .parallax-section {
   position: relative;
-  height: auto; 
+  height: auto;
   overflow: hidden;
 }
 
@@ -107,14 +107,14 @@ body{
   background-image: url('pic6.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: overlay;
 }
 
 .parallax-content {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
   padding: 20px;
   color: white;
 }
@@ -170,12 +170,12 @@ body{
 
 .heading-out {
   color: orange;
-  clip-path: inset(0 0 50% 0); 
+  clip-path: inset(0 0 50% 0);
 }
 
 .heading-in {
   color: black;
-  clip-path: inset(50% 0 0 0); 
+  clip-path: inset(50% 0 0 0);
 }
 
 .grid-item{
@@ -215,7 +215,27 @@ body{
 }
 
 .item-desc-icon{
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
   height: 10vh;
 }
 
+.reviews-container {
+  padding: 50px;
+  background-color: #222; /* dark so white stars show */
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  padding: 20px;
+  color: white;
+  max-width: 600px;
+}
+
+svg {
+  margin-top: 10px;
+}
