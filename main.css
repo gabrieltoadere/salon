@@ -162,7 +162,7 @@ body{
 
 .heading {
   position: absolute;
-  font-size: 50px;
+  font-size: 3.5rem;
   font-family: 'Fraunces';
   margin: 0;
   pointer-events: none;
@@ -221,21 +221,61 @@ body{
 
 .reviews-container {
   padding: 50px;
-  background-color: #222; /* dark so white stars show */
+  background-color: #222;
   text-align: center;
 }
 
 .reviews {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-bottom: 6vh;
 }
 
 .review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  color: white;
-  max-width: 600px;
+  color: black;
+  max-width: 300px;
+  font-family: 'Fraunces';
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
+.review-text{
+  padding-bottom: 4vh ;
+  padding-top: 4vh;
+}
+
+.name{
+  position: absolute;
+  top: 0;
 }
 
 svg {
   margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2vh;
 }
+
+.review-header{
+  color: white;
+  font-size: 3.5rem;
+  padding-bottom: 2vh;
+}
+
+.contact-button{
+  font-family: 'Fraunces';
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  background-color: rgba(255, 166, 0, 0.76);
+  border: none;
+}
+
+
