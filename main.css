@@ -364,7 +364,6 @@ svg {
   justify-self: center;
   margin-bottom: 10vh;
   text-align: center;
-  box-shadow: ;
 }
 
 .branding-header{
@@ -391,9 +390,7 @@ svg {
     .branding-image {
         max-width: 90%;
     }
-    .branding {
-      max-height: ;
-    }
+
 }
 
 @media (max-width: 600px) {
