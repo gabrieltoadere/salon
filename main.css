@@ -15,7 +15,7 @@ body{
   position:absolute;
   right: 0;
   display: flex;
-  width: 60vw;
+  width: 70%;
   justify-content: space-around;
 }
 
@@ -31,13 +31,14 @@ body{
   border-bottom: solid;
   border-width: 3px;
   border-color: rgba(203, 149, 49,89);
+  position: relative;
 }
 
 .icon{
   border-radius: 50%;
-  height: 7vw;
+  max-height: 80%;
   position:absolute;
-  left: 100px;
+  left: 5vw;
 }
 
 .header-button{
@@ -120,11 +121,11 @@ body{
 }
 
 .insta-logo{
-  width: 40px;
+  width: 4vh;
 }
 
 .fb-logo{
-  width: 35px;
+  width: 3.5vh;
 }
 
 .socials{
@@ -145,7 +146,7 @@ body{
 .service-grid {
   display: grid;
   width: 80vw;
-  margin: 0 auto;
+  margin: auto auto;
   grid-template-columns: repeat(3,25vw);
   grid-gap: 2vw;
   justify-content: center;
@@ -189,18 +190,24 @@ body{
   background: url('pic11.jpg');
   background-size: cover;
   object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .grid-item2{
   background: url('pic13.jpg');
   background-size: cover;
   object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .grid-item3{
   background: url('pic12.jpg');
   background-size: cover;
   object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .middle-grid-item{
@@ -221,11 +228,35 @@ body{
 
 @media (max-width: 500px) {
   .heading{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .header-button{
+    font-size: 0.6rem;
+  }
+  .header-buttons-container{
+    width: 80%;
+  }
+  .insta-logo{
+    width: 2vh;
+  }
+  .fb-logo{
+    width: 1.7vh;
+  }
+  .middle-grid-item{
+    transform: translateY(+0%);
+  }
+}
+
+@media (max-width: 650px) {
+  .grid-item{
+    width: 95%;
   }
 }
 
 @media (max-width: 900px) {
+  .middle-grid-item{
+    transform: translateY(+0%);
+  }
     .service-grid {
         grid-template-columns: 1fr;
         padding: 10px;
@@ -276,27 +307,30 @@ body{
 }
 
 
-
-
-.reviews-container {
+.reviews-div {
   padding: 50px;
   background-image: linear-gradient(150deg, #222 , rgb(53, 53, 53));
+}
+
+.reveiws-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   flex-direction: row;
   padding-bottom: 6vh;
+  justify-content: space-between;
 }
 
 .review {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   padding: 20px;
   color: black;
   max-width: 18vw;
@@ -305,15 +339,9 @@ body{
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.89);
   margin-top: 5vh;
+  margin: 1vw;
 }
 
-
-@media (max-width: 1500px) {
-    .reviews {
-        justify-content: center;
-    }
-
-}
 
 @media (max-width: 900px) {
     .reviews {
@@ -324,7 +352,7 @@ body{
         max-width: 45%;
         font-size: 80%;
     }
-}
+} 
 
 @media (max-width: 600px) {
     .review {
@@ -348,11 +376,12 @@ body{
   margin-left: 0;
 }
 
-svg {
+.rating-svg {
   margin-top: 10px;
   position: absolute;
   bottom: 0;
   padding-bottom: 2vh;
+  width: 90%;
 }
 
 .review-header{
