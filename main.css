@@ -44,7 +44,7 @@ body{
 .header-button{
   height: 50px;
   background: none;
-  color:white;
+  color:rgb(255, 255, 255);
   border: none;
   font-family: 'Fraunces';
   font-size: 1.6rem;
@@ -361,7 +361,6 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
-
   padding: 20px;
   color: black;
   max-width: 18vw;
@@ -422,12 +421,15 @@ body{
 }
 
 .contact-button{
+  display: flex;
   font-family: 'Fraunces';
-  width: 10vw;
-  height: 6vh;
+  height: 2vh;
   font-size: 1.2rem;
   background-color: rgba(255, 166, 0, 0.76);
   border: none;
+  padding: 2vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .branding{
@@ -446,7 +448,13 @@ body{
 }
 
 .branding-header{
+  width: 80%;
   align-self:left;
+  color: black;
+  border-bottom: solid;
+  border-color: orange;
+  border-width: 2px;
+  font-family: 'Fraunces';
 }
 
 .branding-image {
@@ -454,15 +462,15 @@ body{
   height: auto;
   margin: 0 auto;
   display: block;
-  margin-top: 7vh;
 }
 
 .branding-text{
   margin: 0;
-  margin-bottom: 10vh;
-  font-size: 2rem;
+  margin-bottom: 6vh;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 80%;
+  font-family: 'Fraunces';
 }
 
 @media (max-width: 900px) {
@@ -479,9 +487,44 @@ body{
 }
 
 
+.map-div{
+  margin-bottom: 0;
+}
+
 .footer{
   height: 80vh;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(150deg, #222 , rgb(53, 53, 53));
+}
+
+.img-half{
+
+}
+
+.footer-logo{
+  max-height: 15vw;
+  border: none;
+  border-radius: 50%;
+  margin-left: 1vw;
+}
+
+.information{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts-div{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  background: pink;
+  height: 100%;
+  margin: 0;
+}
+
+.schedule{
+  width: 55%;
+  background-color: lightblue;
 }
