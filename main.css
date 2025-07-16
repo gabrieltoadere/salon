@@ -3,8 +3,8 @@ html{
 }
 
 .header{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 body{
@@ -47,7 +47,7 @@ body{
   color:white;
   border: none;
   font-family: 'Fraunces';
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   transition: all ease 0.3s;
 }
 
@@ -226,15 +226,47 @@ body{
   height: 10vh;
 }
 
-@media (max-width: 500px) {
-  .heading{
-    font-size: 1.5rem;
-  }
+
+@media (max-width: 900px) {
   .header-button{
-    font-size: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .header-buttons-container{
+    width: 75%;
+  }
+  .insta-logo{
+    width: 3vh;
+  }
+  .fb-logo{
+    width: 2vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-button{
+    font-size: 0.85rem;
   }
   .header-buttons-container{
     width: 80%;
+  }
+  .insta-logo{
+    width: 2.5vh;
+  }
+  .fb-logo{
+    width: 1.85vh;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .heading{
+    font-size: 1.5rem;
+  }
+    .header-buttons-container{
+    width: 85%;
+  }
+  .header-button{
+    font-size: 0.6rem;
   }
   .insta-logo{
     width: 2vh;
@@ -242,9 +274,7 @@ body{
   .fb-logo{
     width: 1.7vh;
   }
-  .middle-grid-item{
-    transform: translateY(+0%);
-  }
+
 }
 
 @media (max-width: 650px) {
@@ -254,9 +284,10 @@ body{
 }
 
 @media (max-width: 900px) {
-  .middle-grid-item{
-    transform: translateY(+0%);
-  }
+    .middle-grid-item{
+      transform: translateY(+0%);
+    }
+
     .service-grid {
         grid-template-columns: 1fr;
         padding: 10px;
