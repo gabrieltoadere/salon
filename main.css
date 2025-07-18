@@ -12,11 +12,11 @@ body{
 }
 
 .header-buttons-container{
-  position:absolute;
   right: 0;
   display: flex;
   width: 70%;
   justify-content: space-around;
+  position: absolute;
 }
 
 .header{
@@ -37,9 +37,10 @@ body{
 .icon{
   border-radius: 50%;
   max-height: 80%;
-  position:absolute;
   left: 5vw;
-}
+  position: absolute;
+  transform: translateY(-50%);
+} 
 
 .header-button{
   height: 50px;
@@ -118,6 +119,11 @@ body{
   z-index: 1;
   padding: 20px;
   color: white;
+}
+
+.socials-link{
+  display: flex;
+  justify-content: center;
 }
 
 .insta-logo{
