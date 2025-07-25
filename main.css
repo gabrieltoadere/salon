@@ -92,6 +92,8 @@ body{
 .welcome-text{
   color: white;
   font-family: 'Fraunces';
+  font-size: 2rem;
+  width: 50vw;
 }
 
 .parallax-section {
@@ -498,7 +500,7 @@ body{
 }
 
 .footer{
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -532,7 +534,7 @@ body{
   color: white;
   border-bottom: solid;
   max-width: 50%;
-  border-color: rgb(255, 210, 63);
+  border-color: rgba(255, 166, 0, 0.76);
 }
 
 .address{
@@ -582,7 +584,7 @@ body{
 
 .schedule-row .dots {
   flex-grow: 1;
-  border-bottom: 1px dotted rgb(255, 210, 63);
+  border-bottom: 1px dotted rgba(255, 166, 0, 0.76);
   margin: 0 8px;
 }
 
@@ -591,10 +593,10 @@ body{
   text-align: right;
 }
 
-
 .information{
   position: relative;
-  padding-bottom: 30px
+  padding-bottom: 8vh;
+  padding-top: 2vh;
 }
 
 .information::after {
@@ -604,5 +606,14 @@ body{
   left: 10%;
   width: 80%;
   height: 2px;
-  background: rgb(255, 210, 63);
+  background: rgba(255, 166, 0, 0.76);
+}
+
+
+.annoying-fixed-contact{
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  background-color: rgba(255, 166, 0, 0.76);
+  padding: 5px;
 }
