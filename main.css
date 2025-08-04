@@ -14,7 +14,7 @@ body{
 .header-buttons-container{
   right: 0;
   display: flex;
-  width: 70%;
+  width: 50%;
   justify-content: space-around;
   position: absolute;
 }
@@ -67,12 +67,17 @@ body{
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
   height: auto;
   text-align: center;
   position: relative;
   margin-top: 25vh;
   padding: 50px;
   background: rgba(255, 255, 255, 1);
+  justify-self: center;
+  margin-bottom: 10vh;
 }
 
 .welcome {
@@ -235,120 +240,9 @@ body{
 }
 
 
-@media (max-width: 900px) {
-  .header-button{
-    font-size: 1.1rem;
-  }
-  .header-buttons-container{
-    width: 75%;
-  }
-  .insta-logo{
-    width: 3vh;
-  }
-  .fb-logo{
-    width: 2vh;
-  }
-}
-
-@media (max-width: 700px) {
-  .header-button{
-    font-size: 0.85rem;
-  }
-  .header-buttons-container{
-    width: 80%;
-  }
-  .insta-logo{
-    width: 2.5vh;
-  }
-  .fb-logo{
-    width: 1.85vh;
-  }
-}
-
-
-@media (max-width: 560px) {
-  .heading{
-    font-size: 1.5rem;
-  }
-    .header-buttons-container{
-    width: 85%;
-  }
-  .header-button{
-    font-size: 0.6rem;
-  }
-  .insta-logo{
-    width: 2vh;
-  }
-  .fb-logo{
-    width: 1.7vh;
-  }
-
-}
-
-@media (max-width: 650px) {
-  .grid-item{
-    width: 95%;
-  }
-}
-
-@media (max-width: 900px) {
-    .middle-grid-item{
-      transform: translateY(+0%);
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-    
-    .grid-item {
-        height: 200px;
-        margin-bottom: 15px;
-    }
-    
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .header-buttons-container {
-        margin-top: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .header-button {
-        margin: 5px;
-        padding: 8px 12px;
-    }
-    
-    .welcome-text {
-        font-size: 1.5rem;
-    }
-    
-    .split-heading {
-        flex-direction: column;
-    }
-    
-    .reviews {
-        flex-direction: column;
-    }
-    
-    .review {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .footer iframe {
-        width: 100%;
-        height: 300px;
-    }
-}
-
-
 .reviews-div {
   padding: 50px;
-  background-image: linear-gradient(135deg, #222 , rgb(124, 124, 124));
+  background-image: linear-gradient(135deg, #222 , rgb(68, 68, 68));
 }
 
 .reveiws-container{
@@ -380,26 +274,6 @@ body{
   margin: 1vw;
 }
 
-
-@media (max-width: 900px) {
-    .reviews {
-        justify-content: center;
-    }
-    .review {
-        flex: 1 1 45%; 
-        max-width: 45%;
-        font-size: 80%;
-    }
-} 
-
-@media (max-width: 600px) {
-    .review {
-        flex: 1 1 100%; 
-        max-width: 100%;
-        margin-bottom: 20px;
-        font-size: 70%;
-    }
-}
 
 .review-text{
   padding-bottom: 4vh ;
@@ -481,19 +355,6 @@ body{
   font-family: 'Fraunces';
 }
 
-@media (max-width: 900px) {
-    .branding-image {
-        max-width: 90%;
-    }
-
-}
-
-@media (max-width: 600px) {
-    .branding-image {
-        max-width: 95%;
-    }
-}
-
 
 .map-div{
   margin-bottom: 0;
@@ -504,7 +365,7 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(150deg, #222 , rgb(53, 53, 53));
+  background-image: linear-gradient(135deg, #222 , rgb(68, 68, 68));
 }
 
 .footer-logo{
@@ -611,9 +472,158 @@ body{
 
 
 .annoying-fixed-contact{
+  font-family: 'Fraunces';;
+  font-size: 1.4rem;
   position: fixed;
   bottom: 0;
-  right: 10%;
-  background-color: rgba(255, 166, 0, 0.76);
-  padding: 5px;
+  right: 4%;
+  background-color: rgba(255, 166, 0, 1);
+  padding: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .header-buttons-container{
+    width: 60%;
+  }
+  .header-button{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .review{
+    font-size: 1rem;
+  }
+   .header-buttons-container{
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .header-button{
+    font-size: 1.1rem;
+  }
+  .header-buttons-container{
+    width: 75%;
+  }
+  .insta-logo{
+    width: 3vh;
+  }
+  .fb-logo{
+    width: 2vh;
+  }
+  .middle-grid-item{
+    transform: translateY(+0%);
+  }
+
+  .service-grid {
+      grid-template-columns: 1fr;
+      padding: 10px;
+  }
+  
+  .grid-item {
+      height: 200px;
+      margin-bottom: 15px;
+  }
+  
+  .header {
+      flex-direction: column;
+      padding: 10px;
+  }
+  
+  .header-buttons-container {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .header-button {
+      margin: 5px;
+      padding: 8px 12px;
+  }
+  
+  .welcome-text {
+      font-size: 1.5rem;
+  }
+  
+  .split-heading {
+      flex-direction: column;
+  }
+  
+
+  
+  .review {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .footer iframe {
+      width: 100%;
+      height: 300px;
+  }
+  .reviews {
+      justify-content: center;
+  }
+  .review {
+      flex: 1 1 45%; 
+      max-width: 45%;
+      font-size: 80%;
+  }
+  .branding-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-button{
+    font-size: 0.85rem;
+  }
+  .header-buttons-container{
+    width: 80%;
+  }
+  .insta-logo{
+    width: 2.5vh;
+  }
+  .fb-logo{
+    width: 1.85vh;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .heading{
+    font-size: 1.5rem;
+  }
+    .header-buttons-container{
+    width: 85%;
+  }
+  .header-button{
+    font-size: 0.6rem;
+  }
+  .insta-logo{
+    width: 2vh;
+  }
+  .fb-logo{
+    width: 1.7vh;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .grid-item{
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+    .review {
+        flex: 1 1 100%; 
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 70%;
+    }
+    .branding-image {
+        max-width: 95%;
+    }
 }
