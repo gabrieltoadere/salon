@@ -72,8 +72,6 @@ body{
   width: 85vw;
   height: auto;
   text-align: center;
-  position: relative;
-  margin-top: 25vh;
   padding: 50px;
   background: rgba(255, 255, 255, 1);
   justify-self: center;
@@ -84,6 +82,7 @@ body{
   position: relative;
   margin: 0;
   margin-top: 15vh;
+  margin-bottom: 20vh;
   padding: 20px;
   background: none;
   display: flex;
@@ -197,6 +196,7 @@ body{
   min-height: 60vh;
   min-width: 25vw;
   overflow: hidden;
+ 
 }
 
 .grid-item1{
@@ -205,6 +205,14 @@ body{
   object-fit: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateX(-40px);
+}
+
+.grid-item1.visible{
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .grid-item2{
@@ -213,6 +221,14 @@ body{
   object-fit: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 0.9s;
+  transform: translateY(0);
+}
+
+.grid-item2.visible{
+  opacity: 1;
+  transform: translateY(-30px);
 }
 
 .grid-item3{
@@ -221,11 +237,16 @@ body{
   object-fit: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateX(+40px);
 }
 
-.middle-grid-item{
-  transform: translateY(-5%);
+.grid-item3.visible{
+  opacity: 1;
+  transform: translateX(0);
 }
+
 
 .item-desc{
   position:absolute;
@@ -257,7 +278,9 @@ body{
   flex-direction: row;
   padding-bottom: 6vh;
   justify-content: space-between;
+  transform: all 0.5s;
 }
+
 
 .review {
   position: relative;
@@ -273,7 +296,6 @@ body{
   margin-top: 5vh;
   margin: 1vw;
 }
-
 
 .review-text{
   padding-bottom: 4vh ;
@@ -300,7 +322,9 @@ body{
   color: white;
   font-size: 3.5rem;
   padding-bottom: 2vh;
+  transform: all 0.5s;
 }
+
 
 .contact-button{
   display: flex;
@@ -312,6 +336,7 @@ body{
   padding: 2vw;
   align-items: center;
   justify-content: center;
+  transform: all 0.5s;
 }
 
 .branding{
@@ -627,3 +652,4 @@ body{
         max-width: 95%;
     }
 }
+
