@@ -87,3 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(header);
     }
   });
+
+
+
+window.addEventListener("load", function () {
+    document.querySelector(".header-buttons-container").classList.add("fade-in");
+    document.querySelector(".welcome-text-container").classList.add("fade-in");
+});
