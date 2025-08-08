@@ -35,6 +35,12 @@
     width: 100%;
     height: auto;
     display: block;
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.about-us-image.visible{
+    opacity: 1;
 }
 
 .about-us-text {
@@ -58,7 +64,7 @@
 .slide-up-line {
     display: inline-block;
     overflow: hidden;
-    line-height: 1.5;
+    line-height: 0.963;
     margin-bottom: 1rem;
     height: 1.5em;
     vertical-align: bottom;

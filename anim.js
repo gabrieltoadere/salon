@@ -103,8 +103,12 @@ window.addEventListener("load", function () {
 window.addEventListener('load', () => {
     const inners = document.querySelectorAll('.slide-up-inner');
     inners.forEach((inner, index) => {
-      setTimeout(() => {
+        setTimeout(() => {
         inner.classList.add('visible');
-      }, index * 100);
+        }, index * 100);
     });
-  });
+});
+
+window.addEventListener('load', function () {
+    document.querySelector('.about-us-image').classList.add('visible');
+});
