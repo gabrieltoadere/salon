@@ -112,3 +112,16 @@ window.addEventListener('load', () => {
 window.addEventListener('load', function () {
     document.querySelector('.about-us-image').classList.add('visible');
 });
+
+
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+    const header = document.querySelector('.content');
+    header.classList.add('start-animation');
+
+    setTimeout(() => {
+        document.querySelector('.split-heading').classList.add('visible');
+    }, 400);
+    }, 200);
+});
