@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-size: 2em; text-align: center; margin-top: 20%">
+    <div id="size"></div>
+    <script>
+      function update() {
+        document.getElementById("size").textContent =
+          window.innerWidth + " × " + window.innerHeight;
+      }
+      window.addEventListener("resize", update);
+      update();
+    </script>
+  </body>
+</html>

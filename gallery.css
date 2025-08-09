@@ -1,0 +1,35 @@
+body {
+  margin: 0rem;
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+.gallery-content {
+  margin: 0;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: calc(100vh - 8vw - 43px);
+  background-image: linear-gradient(135deg, #222 , rgb(68, 68, 68));
+  overflow: hidden;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-track {
+  display: flex;
+  gap:4vmin;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0% ,-50%);
+}
+
+
