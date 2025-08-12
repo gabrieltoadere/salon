@@ -16,10 +16,10 @@ body {
 }
 
 #image-track > .image {
-  width: 40vmin;
+  width: 30vmin;
   height: 56vmin;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 50%;
 }
 
 #image-track {
@@ -28,8 +28,7 @@ body {
   position:absolute;
   left: 50%;
   top: 50%;
-          will-change: transform;
-
+  will-change: transform;
   transform: translate(0% ,-50%);
 }
 

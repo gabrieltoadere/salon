@@ -26,6 +26,7 @@
     width: 100%;
     max-width: 800px;
     overflow: hidden;
+    margin-bottom: 4vh;
 }
 
 .reveal-mask {
@@ -82,11 +83,11 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.prise-section {
+.price-section {
     margin-bottom: 40px;
 }
 
-.prise-section h2 {
+.price-section h2 {
     font-size: 1.75rem;
     font-weight: 600;
     border-bottom: 2px solid #000;
@@ -160,4 +161,41 @@
   margin-top: 20px;
   font-weight: 500;
   font-size: 1.1rem;
+}
+.accordion {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-top: 1px solid #ddd;
+}
+
+.accordion-header {
+  background: #fff;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.accordion-header:hover {
+  background: #f7f7f7;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.accordion-item.open .accordion-content {
+  padding: 15px;
 }
