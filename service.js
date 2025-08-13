@@ -25,3 +25,17 @@ function closeAccordion(item) {
   item.classList.remove("open");
   content.style.maxHeight = null;
 }
+
+window.addEventListener('load', () => {
+  const imgs = document.querySelectorAll('#image-track .image');
+
+  imgs.forEach((img, i) => {
+    // Add the class that triggers the CSS animation
+    img.classList.add('reveal');
+
+    // Stagger timing (120ms start, +160ms per image)
+    const delay = 120 + i * 160;
+    // We have two animations in the CSS, so set delay for both
+    img.style.animationDelay = `${delay}ms, ${delay}ms`;
+  });
+});
